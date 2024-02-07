@@ -10,10 +10,11 @@ Once the codes have been downloaded onto your PC simply add the file paths to yo
 
 ## Use
 There are two versions of dCrawler provided here.
-<mnl_Basic_dCrawler> - This is the simplest purest form of the crawler. Simply insert your values as the "InputMatrix"
+<mnl_Basic_dCrawler> - This is the simplest purest form of the crawler. Simply insert your values as the "InputMatrix", specify your threshold "EuThresh", and whether you want to have output figures ("FigYN").
+<mnl_Weighted_dCrawler> - An amended version where each point is given a particular weight when calculating the centroid positions.
 
 ## Want to know more?
-Please see the the pdf Schema_For_dCrawler. Or watch the attached movie. 
+Please see the the pdf [Schema_For_dCrawler](https://github.com/mleiwe/dCrawler/blob/main/Schema_For_dCrawler.pdf). Or watch the attached movie. 
 
 ## Any more questions?
 Please contact me (mleiwe), you can find my contact information here --> https://github.com/mleiwe.
