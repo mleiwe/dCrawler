@@ -1,5 +1,5 @@
 # dCrawler
-dCrawler is a fully independent clustering algorithm that only requires a distance threshold (Th(d)) to perform clustering
+dCrawler is a fully independent clustering algorithm that only requires a distance threshold (Th(d)) to perform clustering.
 
 ## Requirements
 For now only a MATLAB version of the algortihm is provided.
@@ -15,6 +15,17 @@ There are two versions of dCrawler provided here.
 
 ## Want to know more?
 Please see the the pdf [Schema_For_dCrawler](https://github.com/mleiwe/dCrawler/blob/main/Schema_For_dCrawler.pdf). Or watch the [attached movie](https://github.com/mleiwe/dCrawler/blob/main/SupplementaryVideo1_dCrawlerDemo.avi).
+
+### When you should you use dCrawler?
+There's no one perfect clustering algorithm (or at least to date!). Usually, it depends on the distribution of your points. In our examples below we have a comparison between DBSCAN and dCrawler. 
+
+Top row (A) shows a situation where dCrawler is advantageous. I.e. if two clusters are nearby or potentially overlapping DBSCAN will allocate them as a single cluster, whereas because dCrawler's distance is derived from the putative cluster thresholds and applies the additional steps of adjustment and merge it can derive the position of the two clusters.
+
+The middle row (B) shows where DBSCAN performs better; where clusters are in non-gaussian distributions (e.g. the smile). dCrawler fails in this situation as it splits the smile into three. If the threshold (d) was increased then the eyes would be included too.
+
+Typically the situation is usually seen where the data is often continuous, such as sorting colours such as in the `peppers.png` image provided by MATLAB (C). DBSCAN will assign all the pixels to the same cluster, while dCrawler can identify 10 different colours.
+
+![FigSX_ClusterAlgorithmComparison](https://github.com/mleiwe/dCrawler/assets/29621219/9ba7aa6e-cfd1-425c-b0e7-0fd3c800e96f)
 
 ## Any more questions?
 Please contact me (mleiwe), you can find my contact information here --> https://github.com/mleiwe.
