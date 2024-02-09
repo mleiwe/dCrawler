@@ -23,7 +23,7 @@ Top row (A) shows a situation where dCrawler is advantageous. I.e. if two cluste
 
 The middle row (B) shows where DBSCAN performs better; where clusters are in non-gaussian distributions (e.g. the smile). dCrawler fails in this situation as it splits the smile into three. If the threshold (d) was increased then the eyes would be included too.
 
-Typically the situation is usually seen where the data is often continuous, such as sorting colours such as in the `peppers.png` image provided by MATLAB (C). DBSCAN will assign all the pixels to the same cluster, while dCrawler can identify 10 different colours.
+Typically the situation is usually seen where the data is often continuous, such as sorting colours such as in the `peppers.png` image provided by MATLAB (C). DBSCAN will assign all the pixels to the same cluster, while dCrawler can identify 9 different colours.
 
 ![FigSX_ClusterAlgorithmComparison](https://github.com/mleiwe/dCrawler/assets/29621219/9ba7aa6e-cfd1-425c-b0e7-0fd3c800e96f)
 
