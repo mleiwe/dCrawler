@@ -2,11 +2,28 @@
 
 This is the Python3 implementation of dCrawler is a fully independent clustering algorithm that only requires a distance threshold (Th(d)) to perform clustering.
 
+Featured in the preprint:  **Automated neuronal reconstruction with super-multicolour fluorescence imaging** , Lewie et,al (2022) [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.10.20.512984v1)
+
+## Implementation details
+
+A few things are different in the Python version to make it a bit more efficient, the results are the same as the MATLAB code.
+- Vectorized operations are used wherever possible to speed up computations.
+- The `cKDTree` from the `scipy.spatial` module is used for efficient nearest neighbor search. Instead of calculating distances to all centroids for each point, the k-d tree is used to find the nearest centroid quickly.
+
+
+![clustering_process](https://github.com/Elsword016/dCrawler/assets/29883365/2f7e6394-50e5-452a-b398-4e3022bf2ce1)
+
 ## Installation
 
 ```bash
 pip install dCrawler
 ```
+
+## Build from source - local development
+Recommended to build a separate environment to prevent any possible errors
+- Clone the repository
+- Build the package with the command `python setup.py sdist`
+- Then `pip install .`
 
 ## Usage
 
@@ -18,7 +35,7 @@ crawler.fit(data)
 centroids,clusters = crawler.centroids,crawler.clusters
 ```
 
-## Animation
+
 
 
 ## Contributing
