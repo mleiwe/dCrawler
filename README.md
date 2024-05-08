@@ -10,8 +10,18 @@ Once the codes have been downloaded onto your PC simply add the file paths to yo
 
 ### Use
 There are two versions of dCrawler provided here.
-<mnl_Basic_dCrawler> - This is the simplest purest form of the crawler. Simply insert your values as the "InputMatrix", specify your threshold "EuThresh", and whether you want to have output figures ("FigYN").
-<mnl_Weighted_dCrawler> - An amended version where each point is given a particular weight when calculating the centroid positions.
+* `mnl_Basic_dCrawler` - This is the simplest purest form of the crawler. Simply insert your values as the "InputMatrix", specify your threshold "EuThresh", and whether you want to have output figures ("FigYN").
+* `mnl_Weighted_dCrawler` - An amended version where each point is given a particular weight when calculating the centroid positions.
+
+## Python
+### Requirements
+We currently have a preliminary version in the form of a jupyter notebook. This was created in collaboration with [Biswanath Saha](https://github.com/Elsword016). There is an `environment.yaml` file at the moment but for more details see the `Readme.md` within the python implementation folder
+
+### Deployment
+To come...
+* pip install
+* Docker implementation
+* Web-based deployment
 
 ## Want to know more?
 Please see the the pdf [Schema_For_dCrawler](https://github.com/mleiwe/dCrawler/blob/main/Schema_For_dCrawler.pdf). Or watch the [attached movie](https://github.com/mleiwe/dCrawler/blob/main/SupplementaryVideo1_dCrawlerDemo.avi).
